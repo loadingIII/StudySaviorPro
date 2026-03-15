@@ -1,0 +1,72 @@
+2026-03-12 08:30:28,701 - ERROR - file_handler.py:63 - [txt_loader] 读取文件Python基础语法.txt失败, I/O operation on closed file.
+2026-03-12 08:30:28,701 - WARNING - vector_store.py:86 - [加载知识库]文件Python基础语法.txt内无有效文本内容,跳过
+2026-03-12 08:36:13,667 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-12 08:36:42,160 - INFO - vector_store.py:81 - [加载知识库]文件Python基础语法.txt已经处理,跳过
+2026-03-12 08:39:44,215 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-12 08:41:02,246 - ERROR - vector_store.py:100 - [加载知识库]文件pdf1.pdf处理失败,File path <tempfile.SpooledTemporaryFile object at 0x000001946D225CF0> is not a valid file or url
+2026-03-12 08:47:05,728 - ERROR - file_handler.py:47 - [pdf_loader] 加载文件pdf1.pdf失败，File path <tempfile.SpooledTemporaryFile object at 0x0000020EC2F9E2F0> is not a valid file or url
+2026-03-12 08:47:05,729 - WARNING - vector_store.py:86 - [加载知识库]文件pdf1.pdf内无有效文本内容,跳过
+2026-03-12 08:58:19,295 - ERROR - file_handler.py:62 - [pdf_loader] 加载文件 pdf1.pdf 失败: `pypdf` package not found, please install it with `pip install pypdf`
+2026-03-12 08:58:19,296 - WARNING - vector_store.py:86 - [加载知识库]文件pdf1.pdf内无有效文本内容,跳过
+2026-03-12 09:01:28,186 - INFO - vector_store.py:98 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-12 09:03:03,820 - INFO - agent_router.py:24 - 用户调用Agent：Python基本语法的重点有哪些?
+2026-03-12 09:15:38,799 - ERROR - file_handler.py:62 - [pdf_loader] 加载文件 pdf2.pdf 失败: File has not been decrypted
+2026-03-12 09:15:38,800 - WARNING - vector_store.py:86 - [加载知识库]文件pdf2.pdf内无有效文本内容,跳过
+2026-03-12 09:17:21,979 - INFO - vector_store.py:98 - [加载知识库]文件尺码推荐.txt处理完成
+2026-03-12 09:18:01,195 - INFO - vector_store.py:98 - [加载知识库]文件洗涤养护.txt处理完成
+2026-03-12 09:21:47,302 - INFO - vector_store.py:98 - [加载知识库]文件颜色选择.txt处理完成
+2026-03-12 09:27:31,454 - INFO - vector_store.py:81 - [加载知识库]文件颜色选择.txt已经处理,跳过
+2026-03-12 09:36:07,219 - INFO - vector_store.py:81 - [加载知识库]文件Python基础语法.txt已经处理,跳过
+2026-03-12 09:36:23,690 - INFO - vector_store.py:81 - [加载知识库]文件Python基础语法.txt已经处理,跳过
+2026-03-12 09:43:47,400 - INFO - vector_store.py:81 - [加载知识库]文件Python基础语法.txt已经处理,跳过
+2026-03-12 09:44:02,103 - ERROR - file_handler.py:62 - [pdf_loader] 加载文件 pdf2.pdf 失败: File has not been decrypted
+2026-03-12 09:44:02,104 - WARNING - vector_store.py:86 - [加载知识库]文件pdf2.pdf内无有效文本内容,跳过
+2026-03-12 21:24:04,864 - INFO - agent_router.py:24 - 用户调用Agent：你好
+2026-03-12 21:33:24,648 - INFO - agent_router.py:24 - 用户调用Agent：你好
+2026-03-12 21:52:32,057 - INFO - agent_router.py:24 - 用户调用Agent：你好
+2026-03-12 22:07:08,726 - INFO - agent_router.py:24 - 用户调用Agent：你好啊
+2026-03-12 22:18:37,525 - INFO - agent_router.py:24 - 用户调用Agent：简单介绍一下RAG
+2026-03-12 22:46:22,696 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:47:16,516 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:48:18,695 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:51:59,832 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:52:16,152 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:52:32,173 - INFO - agent_router.py:60 - 用户调用Agent Stream：介绍一下RAG
+2026-03-12 22:55:36,422 - INFO - agent_router.py:60 - 用户调用Agent Stream：介绍一下RAG
+2026-03-12 22:56:51,288 - INFO - agent_router.py:60 - 用户调用Agent Stream：什么是计算机网络,简单介绍
+2026-03-12 22:57:59,185 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:58:38,918 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 22:59:14,658 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好
+2026-03-12 22:59:50,492 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 23:02:59,664 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 23:04:34,895 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 23:06:58,190 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 23:09:33,874 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊
+2026-03-12 23:12:16,891 - INFO - agent_router.py:60 - 用户调用Agent Stream：你好啊\
+2026-03-12 23:12:41,159 - INFO - agent_router.py:60 - 用户调用Agent Stream：RAG是什么
+2026-03-12 23:15:34,740 - INFO - agent_router.py:25 - 用户调用Agent：RAG是什么
+2026-03-12 23:16:54,646 - INFO - agent_router.py:60 - 用户调用Agent Stream：RAG是什么
+2026-03-12 23:21:15,112 - INFO - agent_router.py:98 - 用户调用 Agent Stream：你好啊
+2026-03-12 23:21:37,715 - INFO - agent_router.py:98 - 用户调用 Agent Stream：你好啊
+2026-03-12 23:23:13,134 - INFO - agent_router.py:98 - 用户调用 Agent Stream：你好啊
+2026-03-12 23:25:30,808 - INFO - agent_router.py:98 - 用户调用 Agent Stream：你好啊
+2026-03-12 23:26:30,076 - INFO - agent_router.py:98 - 用户调用 Agent Stream：你好啊
+2026-03-12 23:26:48,598 - INFO - agent_router.py:98 - 用户调用 Agent Stream：简单介绍一下RAG
+2026-03-12 23:28:43,733 - INFO - agent_router.py:98 - 用户调用 Agent Stream：介绍一下工业工程专业
+2026-03-12 23:30:54,526 - INFO - agent_router.py:33 - 用户调用 Agent Stream：介绍一下RAG
+2026-03-12 23:36:25,038 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-12 23:36:35,706 - INFO - vector_store.py:98 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-12 23:37:03,746 - INFO - agent_router.py:33 - 用户调用 Agent Stream：帮我梳理一下Python的重点内容
+2026-03-12 23:41:22,319 - INFO - agent_router.py:33 - 用户调用 Agent Stream：帮我梳理一下Python的重点
+2026-03-12 23:43:38,972 - INFO - agent_router.py:33 - 用户调用 Agent Stream：简单总结一下python重点
+2026-03-12 23:45:41,833 - INFO - agent_router.py:33 - 用户调用 Agent Stream：简单介绍一下python
+2026-03-12 23:47:39,501 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-12 23:47:48,436 - INFO - vector_store.py:98 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-12 23:48:12,589 - INFO - agent_router.py:33 - 用户调用 Agent Stream：简单总结一下python重点
+2026-03-12 23:51:03,393 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-12 23:51:12,173 - INFO - vector_store.py:98 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-12 23:51:30,274 - INFO - agent_router.py:33 - 用户调用 Agent Stream：简单介绍一下python
+2026-03-12 23:58:18,242 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-12 23:58:27,197 - INFO - vector_store.py:98 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-12 23:58:50,559 - INFO - agent_router.py:33 - 用户调用 Agent Stream：请简单介绍一下Python的课程内容
+2026-03-13 00:00:37,337 - INFO - agent_router.py:25 - 用户调用Agent：你好

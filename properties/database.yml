@@ -1,0 +1,9 @@
+redis_host: localhost
+redis_port: 6379
+redis_db: 0
+
+pg_host: localhost
+pg_port: 5432
+pg_db: agentdb
+pg_user: postgres
+pg_password: 123321

@@ -1,0 +1,54 @@
+2026-03-14 10:30:33,065 - INFO - agent_router.py:33 - 用户调用 Agent Stream：你好
+2026-03-14 10:32:02,501 - INFO - agent_router.py:33 - 用户调用 Agent Stream：你是谁
+2026-03-14 14:28:59,422 - INFO - agent_router.py:55 - 用户请求智能出题：0 1 明朝
+2026-03-14 14:30:27,768 - INFO - agent_router.py:55 - 用户请求智能出题：0 1 明朝历史
+2026-03-14 14:40:24,225 - INFO - agent_router.py:55 - 用户请求智能出题：1 2 明朝历史
+2026-03-14 14:50:06,053 - INFO - agent_router.py:55 - 用户请求智能出题：0 1 明朝历史
+2026-03-14 14:56:17,971 - INFO - agent_router.py:55 - 用户请求智能出题：0 3 宋朝历史
+2026-03-14 14:59:51,288 - INFO - agent_router.py:55 - 用户请求智能出题：0 1 清朝末代皇帝是谁?
+2026-03-14 15:01:16,880 - INFO - agent_router.py:55 - 用户请求智能出题：2 1 明朝历史
+2026-03-14 15:05:53,262 - INFO - agent_router.py:55 - 用户请求智能出题：2 1 明朝历史
+2026-03-14 15:16:08,049 - INFO - agent_router.py:55 - 用户请求智能出题：1 1 明朝历史
+2026-03-14 15:18:37,583 - INFO - agent_router.py:55 - 用户请求智能出题：1 1 清朝的税法
+2026-03-14 15:21:31,579 - INFO - agent_router.py:55 - 用户请求智能出题：1 1 清朝税法
+2026-03-14 15:22:11,390 - INFO - agent_router.py:55 - 用户请求智能出题：1 1 清朝成立时间
+2026-03-14 15:28:20,565 - INFO - agent_router.py:55 - 用户请求智能出题：1 1 唐朝有哪些盛世
+2026-03-14 15:30:20,208 - INFO - agent_router.py:55 - 用户请求智能出题：3 1 明朝历史
+2026-03-14 15:54:59,082 - INFO - agent_router.py:55 - 用户请求智能出题：0 1 明朝历史
+2026-03-14 15:56:54,201 - INFO - agent_router.py:55 - 用户请求智能出题：0 4 牛顿第二定律
+2026-03-14 16:04:05,012 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:4 知识点:计算机网络的三报文握手
+2026-03-14 16:05:24,115 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:4 知识点:计算机网络的三报文握手
+2026-03-14 16:07:14,029 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:4 知识点:计算机网络的三报文握手
+2026-03-14 16:34:46,883 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:0 知识点:history_list
+2026-03-14 16:41:56,106 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:1 知识点:计算机网络的三报文握手
+2026-03-14 16:54:25,758 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:1 知识点:计算机网络的三报文握手
+2026-03-14 16:54:55,543 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:1 知识点:计算机网络的三报文握手
+2026-03-14 16:55:37,745 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:1 知识点:计算机网络的三报文握手
+2026-03-14 16:56:10,902 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:1 知识点:计算机网络的三报文握手
+2026-03-14 16:56:35,958 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:1 知识点:计算机网络的三报文握手
+2026-03-14 17:44:15,497 - INFO - vector_store.py:72 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-14 17:44:34,610 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:1 知识点:Python基础语法
+2026-03-14 17:45:49,347 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:1 知识点:Python基础语法
+2026-03-14 17:47:49,328 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:1 知识点:Python基础语法
+2026-03-14 17:49:33,858 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:1 知识点:Python基础语法
+2026-03-14 18:08:22,851 - WARNING - vector_store.py:59 - [加载知识库]文件计算机网络复习大纲.docx内无有效文本内容,跳过
+2026-03-14 18:11:13,144 - ERROR - file_handler.py:162 - [doc_loader] 加载文件 计算机网络复习大纲.docx 失败：'NoneType' object has no attribute 'paragraphs'
+2026-03-14 18:11:13,144 - WARNING - vector_store.py:59 - [加载知识库]文件计算机网络复习大纲.docx内无有效文本内容,跳过
+2026-03-14 18:12:29,811 - INFO - file_handler.py:173 - [doc_loader] 成功从文件 计算机网络复习大纲.docx 提取 66 个段落
+2026-03-14 18:12:31,055 - INFO - vector_store.py:74 - [加载知识库]文件计算机网络复习大纲.docx处理完成
+2026-03-14 18:15:21,597 - INFO - vector_store_service.py:79 - 文件 Python基础语法.txt 已成功删除
+2026-03-14 18:15:24,845 - INFO - vector_store_service.py:79 - 文件 计算机网络复习大纲.docx 已成功删除
+2026-03-14 18:19:03,318 - INFO - file_handler.py:173 - [doc_loader] 成功从文件 计算机网络复习大纲.docx 提取 66 个段落
+2026-03-14 18:19:04,543 - INFO - vector_store.py:74 - [加载知识库]文件计算机网络复习大纲.docx处理完成
+2026-03-14 18:19:25,228 - ERROR - file_handler.py:128 - [doc_loader] python-docx 加载失败：file '<_io.BytesIO object at 0x0000024079E2B330>' is not a Word file, content type is 'application/vnd.openxmlformats-officedocument.themeManager+xml'
+2026-03-14 18:19:25,228 - ERROR - file_handler.py:136 - [doc_loader] DocxTemplate 转换后 docx 为 None
+2026-03-14 18:19:25,228 - WARNING - vector_store.py:59 - [加载知识库]文件常用的9个网络命令.doc内无有效文本内容,跳过
+2026-03-14 18:19:35,651 - INFO - vector_store_service.py:79 - 文件 计算机网络复习大纲.docx 已成功删除
+2026-03-14 18:22:06,824 - INFO - file_handler.py:173 - [doc_loader] 成功从文件 计算机网络复习大纲.docx 提取 66 个段落
+2026-03-14 18:22:08,070 - INFO - vector_store.py:74 - [加载知识库]文件计算机网络复习大纲.docx处理完成
+2026-03-14 18:22:17,281 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-14 18:22:30,183 - INFO - vector_store.py:74 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-14 18:22:42,404 - INFO - vector_store_service.py:79 - 文件 pdf1.pdf 已成功删除
+2026-03-14 18:23:09,478 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:1 出题数量:3 知识点:计算机网络的常考重点
+2026-03-14 18:23:46,307 - INFO - agent_router.py:31 - 用户调用 Agent Stream：python基础语法有哪些内容啊?
+2026-03-14 18:24:09,598 - INFO - agent_router.py:55 - 用户请求智能出题：题目类型:0 出题数量:3 知识点:计算机网络的三报文握手

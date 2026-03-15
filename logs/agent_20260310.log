@@ -1,0 +1,15 @@
+2026-03-10 16:44:34,306 - agent - INFO - logger_handler.py:56 - 信息日志
+2026-03-10 16:44:34,306 - agent - ERROR - logger_handler.py:57 - 错误日志
+2026-03-10 16:44:34,306 - agent - WARNING - logger_handler.py:58 - 警告日志
+2026-03-10 16:44:34,306 - agent - DEBUG - logger_handler.py:59 - 调试日志
+2026-03-10 16:46:58,035 - agent - INFO - logger_handler.py:56 - 信息日志
+2026-03-10 16:46:58,035 - agent - ERROR - logger_handler.py:57 - 错误日志
+2026-03-10 16:46:58,035 - agent - WARNING - logger_handler.py:58 - 警告日志
+2026-03-10 16:46:58,035 - agent - DEBUG - logger_handler.py:59 - 调试日志
+2026-03-10 16:47:13,624 - INFO - logger_handler.py:56 - 信息日志
+2026-03-10 16:47:13,624 - ERROR - logger_handler.py:57 - 错误日志
+2026-03-10 16:47:13,624 - WARNING - logger_handler.py:58 - 警告日志
+2026-03-10 16:47:13,624 - DEBUG - logger_handler.py:59 - 调试日志
+2026-03-10 17:50:48,775 - INFO - agent_router.py:20 - 用户调用Agent：你是谁呀?
+2026-03-10 17:54:09,807 - INFO - agent_router.py:20 - 用户调用Agent：帮我出一个有关于HTTP协议的选择题
+2026-03-10 23:42:36,348 - INFO - agent_router.py:21 - 用户调用Agent：你好

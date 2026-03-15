@@ -1,0 +1,39 @@
+2026-03-13 00:02:13,136 - INFO - agent_router.py:25 - 用户调用Agent：你好
+2026-03-13 00:04:14,438 - INFO - agent_router.py:25 - 用户调用Agent：你好
+2026-03-13 00:06:30,020 - INFO - agent_router.py:25 - 用户调用Agent：你好
+2026-03-13 00:08:44,689 - INFO - agent_router.py:25 - 用户调用Agent：你好
+2026-03-13 00:10:09,878 - INFO - vector_store.py:98 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 00:10:18,511 - INFO - vector_store.py:98 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-13 00:10:36,900 - INFO - agent_router.py:33 - 用户调用 Agent Stream：简单介绍一下Python的课程内容
+2026-03-13 08:40:06,730 - INFO - agent_router.py:25 - 用户调用Agent：你好
+2026-03-13 09:52:51,126 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 09:59:28,235 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 11:45:06,290 - INFO - vector_store.py:70 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-13 11:47:46,313 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 11:48:21,498 - INFO - vector_store.py:70 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-13 12:09:16,890 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 12:10:57,345 - INFO - vector_store.py:70 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-13 12:21:17,787 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 12:22:30,819 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 12:25:01,759 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 12:27:28,788 - INFO - vector_store.py:70 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 12:40:42,913 - INFO - vector_store.py:70 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-13 13:07:03,755 - ERROR - vector_store_service.py:78 - 删除文件失败: 'Chroma' object has no attribute 'delete_by_metadata'
+2026-03-13 13:18:12,795 - ERROR - vector_store_service.py:82 - 删除文件失败: 'collection_name'
+2026-03-13 13:18:37,466 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:19:29,059 - ERROR - vector_store_service.py:82 - 删除文件失败: 'collection_name'
+2026-03-13 13:22:18,750 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:22:26,359 - ERROR - vector_store_service.py:82 - 删除文件失败: name 'chroma_config' is not defined
+2026-03-13 13:23:15,943 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:23:22,777 - INFO - vector_store_service.py:79 - 文件 Python基础语法.txt 已成功删除
+2026-03-13 13:32:02,784 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:32:14,975 - INFO - vector_store.py:74 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-13 13:33:01,906 - INFO - agent_router.py:33 - 用户调用 Agent Stream：python哪里最难
+2026-03-13 13:35:53,278 - INFO - vector_store_service.py:78 - 文件 Python基础语法.txt 已成功删除
+2026-03-13 13:35:55,800 - INFO - vector_store_service.py:78 - 文件 pdf1.pdf 已成功删除
+2026-03-13 13:36:08,696 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:36:11,885 - INFO - vector_store_service.py:78 - 文件 Python基础语法.txt 已成功删除
+2026-03-13 13:41:11,448 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:41:14,341 - INFO - vector_store_service.py:79 - 文件 Python基础语法.txt 已成功删除
+2026-03-13 13:41:31,654 - INFO - vector_store.py:74 - [加载知识库]文件Python基础语法.txt处理完成
+2026-03-13 13:41:36,378 - INFO - vector_store_service.py:79 - 文件 Python基础语法.txt 已成功删除
