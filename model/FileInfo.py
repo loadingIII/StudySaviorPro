@@ -18,7 +18,7 @@ Notes:
 - We represent `status` as an INT with an accompanying Python IntEnum `FileStatus`.
 - A CheckConstraint is added for non-negative file_size to match the SQL CHECK.
 """
-
+from datetime import datetime
 from enum import IntEnum
 
 from sqlalchemy import (
@@ -52,7 +52,7 @@ class FileInfo(Base):
     stored_path = Column(Text, nullable=False, comment="文件在存储系统中的路径或唯一标识符")
     hash_sha256 = Column(String(64), nullable=True, comment="文件内容的SHA256哈希值")
     file_size = Column(Float, nullable=False, comment="文件大小（字节）")
-    created_at = Column(DateTime(timezone=True), default=func.now(), comment="记录创建时间")
+    created_at = Column(DateTime(timezone=True), default=datetime.now, comment="记录创建时间")
     file_type = Column(String(24), nullable=True, comment="文件类型，例如：'pdf', 'docx', 'txt'")
 
     # Use server_default text("0") to match SQL DEFAULT 0

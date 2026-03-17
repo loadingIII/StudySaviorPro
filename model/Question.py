@@ -56,11 +56,7 @@ from sqlalchemy import Integer, String, Text, DateTime, func, ForeignKey, JSON
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from datetime import datetime
 from typing import Optional
-
-# 假设您已经有一个基础的 Base 类
-# 例如: from your_database_module import Base
-class Base(DeclarativeBase):
-    pass
+from model.base import Base
 
 
 class UserGeneratedQuestion(Base):
@@ -75,7 +71,7 @@ class UserGeneratedQuestion(Base):
     original_question: Mapped[str] = mapped_column(Text, nullable=False, comment="用户提交的原始问题")
     generated_question_text: Mapped[str] = mapped_column(Text, nullable=False, comment="AI生成的题目内容")
     question_type: Mapped[int] = mapped_column(Integer, nullable=False, comment="题目类型")
-    created_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), server_default=func.now(), comment="记录创建时间")
+    created_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), default=datetime.now, comment="记录创建时间")
 
     def __repr__(self):
         return f"<UserGeneratedQuestion(id={self.id}, user_id={self.user_id}, question='{self.original_question[:20]}...')>"
