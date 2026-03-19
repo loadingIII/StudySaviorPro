@@ -1,0 +1,209 @@
+2026-03-19 08:18:34,663 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 08:22:21,861 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 08:22:22,012 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 08:22:25,864 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 08:22:26,170 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 08:22:26,406 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 08:22:26,483 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 08:26:12,407 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 java手册.pdf 失败: unstructured package not found, please install it with `pip install unstructured`
+2026-03-19 08:26:12,407 - WARNING - vector_store.py:59 - [加载知识库]文件java手册.pdf内无有效文本内容,跳过
+2026-03-19 08:31:30,773 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'pdfminer'
+2026-03-19 08:31:30,774 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 08:38:13,022 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: cannot import name 'open_filename' from 'pdfminer.utils' (C:\Users\Liuji\PycharmProjects\agent_fastapi_demo\StudySaviorPro\.venv\Lib\site-packages\pdfminer\utils.py)
+2026-03-19 08:38:13,023 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 08:39:26,789 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: cannot import name 'open_filename' from 'pdfminer.utils' (C:\Users\Liuji\PycharmProjects\agent_fastapi_demo\StudySaviorPro\.venv\Lib\site-packages\pdfminer\utils.py)
+2026-03-19 08:39:26,790 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 08:42:00,002 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: cannot import name 'open_filename' from 'pdfminer.utils' (C:\Users\Liuji\PycharmProjects\agent_fastapi_demo\StudySaviorPro\.venv\Lib\site-packages\pdfminer\utils.py)
+2026-03-19 08:42:00,003 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 08:45:23,722 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'pi_heif'
+2026-03-19 08:45:23,723 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 08:47:27,941 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'unstructured_inference'
+2026-03-19 08:47:27,942 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 12:51:52,733 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 12:52:06,900 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'pdf2image'
+2026-03-19 12:52:06,901 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 12:52:45,301 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'pdfminer.psexceptions'
+2026-03-19 12:52:45,302 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 12:53:12,815 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'pdfminer.psexceptions'
+2026-03-19 12:53:12,816 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 12:54:51,840 - ERROR - file_handler.py:64 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败: No module named 'pdfminer.psexceptions'
+2026-03-19 12:54:51,841 - WARNING - vector_store.py:59 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-19 12:58:39,167 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 12:58:43,247 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 12:58:43,252 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 13:01:17,007 - INFO - vector_store.py:74 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-19 13:04:43,419 - INFO - vector_store.py:74 - [加载知识库]文件中二知识笔记.pdf处理完成
+2026-03-19 13:05:31,307 - INFO - ai_response_service.py:119 - 获取新session_id成功：5
+2026-03-19 13:05:31,568 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 13:05:44,502 - INFO - agent_router.py:36 - 用户调用 Agent Stream：教育的意义是什么?
+2026-03-19 13:05:44,507 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 13:05:48,145 - INFO - agent.py:69 - 工具调用结果：['rag_tool']
+2026-03-19 14:01:58,816 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 14:55:31,567 - INFO - vector_store_service.py:79 - 文件 pdf1.pdf 已成功删除
+2026-03-19 14:57:16,542 - ERROR - vector_store.py:87 - [加载知识库]文件pdf1.pdf处理失败,expected string or bytes-like object, got 'Document'
+2026-03-19 15:19:13,129 - ERROR - vector_store.py:91 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:24:36,744 - ERROR - vector_store.py:91 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:27:38,764 - ERROR - vector_store.py:91 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:31:49,190 - ERROR - vector_store.py:95 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:37:49,697 - ERROR - vector_store.py:92 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:39:26,049 - ERROR - vector_store.py:92 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:43:54,714 - ERROR - vector_store.py:93 - [加载知识库]文件pdf1.pdf处理失败，'NoneType' object has no attribute 'append'
+2026-03-19 15:44:44,718 - ERROR - vector_store.py:93 - [加载知识库]文件pdf1.pdf处理失败，'list' object has no attribute 'metadata' and no __dict__ for setting new attributes
+2026-03-19 15:46:48,669 - ERROR - vector_store.py:93 - [加载知识库]文件pdf1.pdf处理失败，'list' object has no attribute 'metadata' and no __dict__ for setting new attributes
+2026-03-19 15:50:48,984 - ERROR - vector_store.py:93 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 15:54:01,213 - INFO - vector_store.py:75 - [加载知识库]文件pdf1.pdf处理完成
+2026-03-19 15:59:59,874 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 16:05:08,722 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 16:05:52,658 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 16:06:15,144 - INFO - vector_store_service.py:79 - 文件 pdf1.pdf 已成功删除
+2026-03-19 16:06:38,733 - ERROR - vector_store.py:94 - [加载知识库]文件pdf1.pdf处理失败，status_code: 400 
+ code: InvalidParameter 
+ message: Inference error: Range of input length should be [1, 2048]
+2026-03-19 16:43:42,369 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 16:44:13,449 - WARNING - vector_store.py:84 - [加载知识库]文件pdf1.pdf分片后无有效文本内容，跳过
+2026-03-19 16:47:34,356 - ERROR - vector_store.py:105 - [加载知识库]文件pdf1.pdf处理失败，'str' object has no attribute 'metadata' and no __dict__ for setting new attributes
+2026-03-19 17:07:31,751 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 17:12:21,430 - INFO - vector_store.py:103 - [加载知识库]文件测试文件.txt处理完成
+2026-03-19 17:14:38,980 - INFO - vector_store.py:103 - [加载知识库]文件尺码推荐.txt处理完成
+2026-03-19 17:16:36,863 - INFO - vector_store_service.py:79 - 文件 尺码推荐.txt 已成功删除
+2026-03-19 17:16:39,083 - INFO - vector_store_service.py:79 - 文件 测试文件.txt 已成功删除
+2026-03-19 17:20:30,828 - INFO - vector_store.py:103 - [加载知识库]文件测试文件.txt处理完成
+2026-03-19 17:20:47,510 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 17:21:05,371 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 17:21:44,829 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 17:22:25,413 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 17:23:02,846 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 17:23:46,177 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 20:52:58,466 - INFO - agent_router.py:36 - 用户调用 Agent Stream：计算机网络主要是教什么的?
+2026-03-19 20:52:58,473 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 20:53:00,260 - INFO - agent.py:69 - 工具调用结果：['rag_tool']
+2026-03-19 20:56:10,420 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 20:56:29,234 - INFO - ai_response_service.py:119 - 获取新session_id成功：1
+2026-03-19 20:56:29,544 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 20:56:53,286 - INFO - agent_router.py:36 - 用户调用 Agent Stream：不调用知识库,简单介绍一下RAG
+2026-03-19 20:56:53,289 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 20:58:02,602 - INFO - agent_router.py:36 - 用户调用 Agent Stream：那么可以怎么优化RAG
+2026-03-19 20:58:02,605 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 20:58:05,185 - INFO - agent.py:69 - 工具调用结果：['rag_tool']
+2026-03-19 21:03:39,103 - INFO - ai_response_service.py:119 - 获取新session_id成功：2
+2026-03-19 21:03:39,370 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 21:03:48,153 - INFO - agent_router.py:36 - 用户调用 Agent Stream：你好啊,你是谁?
+2026-03-19 21:03:48,155 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 21:05:59,267 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 21:06:02,003 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 21:06:02,005 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 21:06:10,530 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 21:06:10,531 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 21:06:13,675 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 21:06:13,676 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 21:06:43,180 - INFO - ai_response_service.py:119 - 获取新session_id成功：2
+2026-03-19 21:06:43,496 - INFO - ai_response_service.py:139 - 获取用户会话成功!
+2026-03-19 21:07:09,362 - INFO - agent_router.py:36 - 用户调用 Agent Stream：你好啊
+2026-03-19 21:07:09,365 - INFO - ai_response_service.py:159 - 获取用户聊天记录成功!
+2026-03-19 21:13:47,970 - INFO - ai_response_service.py:133 - 获取新session_id成功：3
+2026-03-19 21:14:02,808 - INFO - ai_response_service.py:162 - 获取用户会话成功!
+2026-03-19 21:14:59,857 - INFO - agent_router.py:36 - 用户调用 Agent Stream：不调用数据库,请问什么是深度学习?
+2026-03-19 21:14:59,862 - INFO - ai_response_service.py:182 - 获取用户聊天记录成功!
+2026-03-19 21:19:07,613 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:19:08,885 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:19:09,021 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:19:31,012 - INFO - agent_router.py:36 - 用户调用 Agent Stream：不调用知识库,请问什么是深度学习?
+2026-03-19 21:19:31,016 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:26:39,721 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:26:41,108 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:26:41,111 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:26:52,394 - INFO - agent_router.py:36 - 用户调用 Agent Stream：你好啊,你是谁?
+2026-03-19 21:26:52,400 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:27:00,437 - INFO - ai_response_service.py:91 - 更新会话主题成功：<coroutine object crud_add_chat_history.<locals>.get_theme at 0x000001A1F58D6740>
+2026-03-19 21:34:16,578 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:37:00,543 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:37:00,546 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:37:03,150 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:37:06,389 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:37:08,241 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:37:08,242 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:37:30,375 - INFO - agent_router.py:36 - 用户调用 Agent Stream：你好啊,你是谁?
+2026-03-19 21:37:30,377 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:38:00,271 - INFO - ai_response_service.py:91 - 更新会话主题成功：自我介绍
+2026-03-19 21:42:08,445 - INFO - agent_router.py:36 - 用户调用 Agent Stream：你好啊,你是谁?
+2026-03-19 21:42:08,622 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:42:48,517 - INFO - ai_response_service.py:91 - 更新会话主题成功：AI 自我介绍
+2026-03-19 21:49:46,312 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:49:47,529 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:49:47,709 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:49:48,613 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:49:48,614 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:49:50,069 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 21:49:50,070 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:49:50,702 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 21:49:51,005 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:31:24,510 - ERROR - vector_store.py:134 - [加载知识库]文件pdf1.pdf处理失败，'async_generator' object has no attribute 'add'
+2026-03-19 22:35:33,130 - INFO - vector_store_service.py:89 - 文件 pdf1.pdf 已成功删除
+2026-03-19 22:36:14,930 - ERROR - vector_store.py:134 - [加载知识库]文件pdf1.pdf处理失败，'async_generator' object has no attribute 'add'
+2026-03-19 22:37:36,536 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:37:40,851 - INFO - vector_store_service.py:89 - 文件 pdf1.pdf 已成功删除
+2026-03-19 22:37:56,510 - ERROR - vector_store.py:134 - [加载知识库]文件pdf1.pdf处理失败，'async_generator' object has no attribute 'add'
+2026-03-19 22:38:09,247 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:44:32,434 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:45:01,308 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:45:58,488 - ERROR - vector_store.py:134 - [加载知识库]文件pdf1.pdf处理失败，'async_generator' object has no attribute 'add'
+2026-03-19 22:48:12,263 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:48:27,471 - ERROR - vector_store.py:134 - [加载知识库]文件pdf1.pdf处理失败，'async_generator' object has no attribute 'add'
+2026-03-19 22:51:20,372 - INFO - vector_store_service.py:89 - 文件 pdf1.pdf 已成功删除
+2026-03-19 22:51:37,891 - ERROR - vector_store.py:138 - [加载知识库]文件pdf1.pdf处理失败，(sqlalchemy.dialects.postgresql.asyncpg.Error) <class 'asyncpg.exceptions.DataError'>: invalid input for query argument $3: Document(metadata={}, page_content='P') (expected str, got Document)
+[SQL: INSERT INTO rag_document_chunks (user_id, file_id, content, created_at) VALUES ($1::INTEGER, $2::INTEGER, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING rag_document_chunks.id]
+[parameters: (1, 31, Document(metadata={}, page_content='P'), datetime.datetime(2026, 3, 19, 22, 51, 37, 733996))]
+(Background on this error at: https://sqlalche.me/e/20/dbapi)
+2026-03-19 22:52:44,045 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:52:47,399 - INFO - vector_store_service.py:89 - 文件 pdf1.pdf 已成功删除
+2026-03-19 22:53:09,171 - ERROR - vector_store.py:138 - [加载知识库]文件pdf1.pdf处理失败，(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: 插入或更新表 "rag_document_chunks" 违反外键约束 "rag_document_chunks_file_id_fkey"
+DETAIL:  键值对(file_id)=(32)没有在表"file_info"中出现.
+[SQL: INSERT INTO rag_document_chunks (user_id, file_id, content, created_at) VALUES ($1::INTEGER, $2::INTEGER, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING rag_document_chunks.id]
+[parameters: (1, 32, 'P', datetime.datetime(2026, 3, 19, 22, 53, 9, 160915))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-19 22:54:59,522 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:55:01,691 - INFO - vector_store_service.py:89 - 文件 pdf1.pdf 已成功删除
+2026-03-19 22:55:18,196 - ERROR - vector_store.py:138 - [加载知识库]文件pdf1.pdf处理失败，(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: 插入或更新表 "rag_document_chunks" 违反外键约束 "rag_document_chunks_file_id_fkey"
+DETAIL:  键值对(file_id)=(33)没有在表"file_info"中出现.
+[SQL: INSERT INTO rag_document_chunks (user_id, file_id, content, created_at) VALUES ($1::INTEGER, $2::INTEGER, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING rag_document_chunks.id]
+[parameters: (1, 33, 'P', datetime.datetime(2026, 3, 19, 22, 55, 18, 189467))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-19 22:58:26,847 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 22:58:28,756 - INFO - vector_store_service.py:89 - 文件 pdf1.pdf 已成功删除
+2026-03-19 22:58:44,898 - ERROR - vector_store.py:138 - [加载知识库]文件pdf1.pdf处理失败，(sqlalchemy.dialects.postgresql.asyncpg.IntegrityError) <class 'asyncpg.exceptions.ForeignKeyViolationError'>: 插入或更新表 "rag_document_chunks" 违反外键约束 "rag_document_chunks_file_id_fkey"
+DETAIL:  键值对(file_id)=(34)没有在表"file_info"中出现.
+[SQL: INSERT INTO rag_document_chunks (user_id, file_id, content, created_at) VALUES ($1::INTEGER, $2::INTEGER, $3::VARCHAR, $4::TIMESTAMP WITHOUT TIME ZONE) RETURNING rag_document_chunks.id]
+[parameters: (1, 34, 'Python 语法全面详解与实战指南 第一章 Python 基础语法核心要素 1.1 Python 语言概述 Python 是一种解释型、面向对象、动态数据类型的高级程序设计语言，由 Guido van Rossum 于 1989 年圣诞节期间构思，并在 1991 年正式发布第一个版本。它以 “优 ... (458 characters truncated) ... 导致语法错误。具体的命名规则如下： 标识符由字母（A-Z、a-z）、数字（0-9）和下划线（_）组成，且不能以数字开头。例如， name123、_age、user_name 都是合法的标识符，而 123name、user-name 则是非法标识 符，后者使用了连字符，不符合 Python 语法要求', datetime.datetime(2026, 3, 19, 22, 58, 44, 892849))]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2026-03-19 23:02:10,434 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 23:02:13,152 - INFO - vector_store_service.py:90 - 文件 pdf1.pdf 已成功删除
+2026-03-19 23:07:33,840 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 23:07:33,875 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 23:08:14,480 - INFO - ai_response_service.py:179 - 获取用户聊天记录成功!
+2026-03-19 23:08:14,483 - INFO - ai_response_service.py:159 - 获取用户会话成功!
+2026-03-19 23:47:05,737 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-19 23:47:09,459 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-19 23:47:48,895 - INFO - vector_store_service.py:79 - 文件 pdf1.pdf 已成功删除
+2026-03-19 23:47:56,820 - INFO - ai_response_service.py:117 - 获取新session_id成功：4
+2026-03-19 23:47:57,082 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-19 23:48:43,456 - INFO - agent_router.py:34 - 用户调用 Agent Stream：简单介绍一下计算机网络
+2026-03-19 23:48:43,464 - INFO - ai_response_service.py:154 - 获取用户聊天记录成功!
+2026-03-19 23:48:46,878 - INFO - agent.py:69 - 工具调用结果：['rag_tool']
+2026-03-19 23:54:32,957 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-19 23:54:35,192 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-19 23:54:41,917 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-19 23:54:41,919 - INFO - ai_response_service.py:154 - 获取用户聊天记录成功!

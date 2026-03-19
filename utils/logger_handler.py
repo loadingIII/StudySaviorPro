@@ -39,6 +39,7 @@ def get_logger(
     if not log_file:        # 日志文件的存放路径
         log_file = os.path.join(LOG_ROOT, f"{name}_{datetime.now().strftime('%Y%m%d')}.log")
 
+    #FileHandler负责将日志写入文件
     file_handler = logging.FileHandler(log_file, encoding='utf-8')
     file_handler.setLevel(file_level)
     file_handler.setFormatter(DEFAULT_LOG_FORMAT)

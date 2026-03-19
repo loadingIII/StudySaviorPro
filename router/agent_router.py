@@ -2,13 +2,14 @@ import asyncio
 import json
 
 from fastapi import APIRouter, Depends
-from fastapi.params import Path
+from fastapi.params import Path, Body
 from fastapi.responses import StreamingResponse
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from agent.agent import agent_invoke, agent_stream
 from crud.ai_response_service import crud_intelligent_question_generation, crud_get_user_generated_questions, \
-    crud_add_chat_history, crud_get_chat_history, crud_get_sessions, crud_get_new_session_id
+    crud_add_chat_history, crud_get_chat_history, crud_get_sessions, crud_get_new_session_id, crud_delete_chat_history, \
+    crud_delete_chat_session
 from schemas.agent_schemas import AgentQuestion
 from schemas.quesion_schemas import QuestionDTO
 from schemas.result import success_response, error_response
@@ -76,8 +77,23 @@ async def get_chat_history(session_id: int = Path(...), db: AsyncSession = Depen
     res = await crud_get_chat_history(db, session_id)
     return success_response(data=res, message="获取用户聊天记录成功")
 
+@agent_router.post("/question/delete_chat_history")
+async def delete_chat_history(chat_history_ids: list[int] = Body(...), db: AsyncSession = Depends(get_db)):
+    """删除当前用户的聊天记录"""
+    flat = await crud_delete_chat_history(db, chat_history_ids)
+    if not flat:
+        return error_response(message="删除用户聊天记录失败")
 
+    return success_response(message="删除用户聊天记录成功")
 
+@agent_router.delete("/question/delete_chat_session/{session_id}")
+async def delete_chat_session(session_id: int = Path(...), db: AsyncSession = Depends(get_db)):
+    """删除当前用户的聊天会话"""
+    flat = await crud_delete_chat_session(db, session_id)
+    if not flat:
+        return error_response(message="删除用户聊天会话失败")
+
+    return success_response(message="删除用户聊天会话成功")
 
 
 

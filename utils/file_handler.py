@@ -8,7 +8,7 @@ from docxtpl import DocxTemplate
 from fastapi import UploadFile
 from langchain_core.documents import Document
 from utils.logger_handler import logger
-from langchain_community.document_loaders import PyPDFLoader,TextLoader
+from langchain_community.document_loaders import PyPDFLoader,TextLoader,UnstructuredPDFLoader
 
 def get_file_md5_hex(file: UploadFile) -> str:
     """计算文件的md5值"""
@@ -57,7 +57,7 @@ def pdf_loader(file: UploadFile, password: Optional[str] = None) -> List[Documen
             shutil.copyfileobj(file.file, temp_file)  # 流式复制，高效安全
 
         # 4. 用临时文件路径加载（PyPDFLoader 仅接受路径字符串）
-        loader = PyPDFLoader(temp_file_path, password=password)
+        loader = UnstructuredPDFLoader(temp_file_path, password=password)
         return loader.load()
 
     except Exception as e:

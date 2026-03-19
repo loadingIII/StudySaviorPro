@@ -2,7 +2,7 @@ import asyncio
 from datetime import datetime
 
 from langchain_core.output_parsers import StrOutputParser
-from sqlalchemy import select
+from sqlalchemy import select, update, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from agent.llms.llms import think_llm
@@ -138,7 +138,9 @@ async def crud_get_sessions(db: AsyncSession):
 
 async def crud_get_chat_history(db: AsyncSession, session_id):
     """获取当前用户的聊天记录"""
-    chat_history_res = await db.execute(select(ChatHistory).where(ChatHistory.session_id == session_id).order_by(ChatHistory.id.asc()))
+    chat_history_res = await db.execute(select(ChatHistory)
+                                        .where(ChatHistory.session_id == session_id,ChatHistory.status==0)
+                                        .order_by(ChatHistory.id.asc()))
     chat_history = chat_history_res.scalars().all()
     list_chat = []
     for c in chat_history:
@@ -155,5 +157,28 @@ async def crud_get_chat_history(db: AsyncSession, session_id):
     return list_chat
 
 
+async def crud_delete_chat_history(db: AsyncSession, chat_history_ids):
+    """删除当前用户的聊天记录"""
+    try:
+        await db.execute(update(ChatHistory).where(ChatHistory.id.in_(chat_history_ids)).values(status=1))
+        await db.commit()
+        logger.info(f"删除用户聊天记录成功!")
+        return True
+    except:
+        await db.rollback()
+        logger.error(f"删除用户聊天记录失败!")
+        return False
+
+async def crud_delete_chat_session(db: AsyncSession, session_id):
+    """删除当前用户的聊天会话"""
+    try:
+        # 先将会话下的聊天记录标记为已删除
+        await db.execute(delete(ChatHistory).where(ChatHistory.session_id == session_id))
+        logger.info(f"删除用户聊天会话成功!")
+        return True
+    except:
+        await db.rollback()
+        logger.error(f"删除用户聊天会话失败!")
+        return False
 
 
