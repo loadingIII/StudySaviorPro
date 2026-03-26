@@ -47,7 +47,6 @@ def pdf_loader(file: UploadFile, password: Optional[str] = None) -> List[Documen
         # 1. 确保源文件指针在开头（双重保险）
         if hasattr(file.file, 'seek'):
             file.file.seek(0)
-
         # 2. 创建带.pdf后缀的临时文件（delete=False 保证 PyPDFLoader 能访问）
         with tempfile.NamedTemporaryFile(delete=False, suffix='.pdf', mode='wb') as temp_file:
             temp_file_path = temp_file.name
@@ -57,7 +56,8 @@ def pdf_loader(file: UploadFile, password: Optional[str] = None) -> List[Documen
             shutil.copyfileobj(file.file, temp_file)  # 流式复制，高效安全
 
         # 4. 用临时文件路径加载（PyPDFLoader 仅接受路径字符串）
-        loader = UnstructuredPDFLoader(temp_file_path, password=password)
+        # loader = UnstructuredPDFLoader(temp_file_path, password=password)
+        loader = PyPDFLoader(temp_file_path, password=password)
         return loader.load()
 
     except Exception as e:
@@ -72,15 +72,6 @@ def pdf_loader(file: UploadFile, password: Optional[str] = None) -> List[Documen
             except OSError as cleanup_err:
                 logger.warning(f"[pdf_loader] 临时文件清理失败 ({temp_file_path}): {cleanup_err}")
 
-# def pdf_loader(file: UploadFile,password: str=None)-> list[Document]:
-#     try:
-#         # 确保文件指针在开头
-#         if hasattr(file.file, 'seek'):
-#             file.file.seek(0)
-#         return PyPDFLoader(file.file, password).load()
-#     except Exception as e:
-#         logger.error(f'[pdf_loader] 加载文件{file.filename}失败，{e}')
-#         return []
 
 
 def txt_loader(file: UploadFile):

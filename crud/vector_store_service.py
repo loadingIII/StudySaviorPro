@@ -10,6 +10,7 @@ from schemas.file_schemas import FileVO
 from utils.configUtils import chroma_config
 from utils.file_handler import get_file_md5_hex
 from utils.logger_handler import logger
+from utils.redisUtils import redis_delete_by_prefix
 from utils.threadUtils import get_user_id
 
 
@@ -21,7 +22,7 @@ async def crud_add_documents(db: AsyncSession,file: UploadFile = File(...)):
         return 1
 
     vs = VectorStoreService()
-    flat = vs.load_document(file)
+    flat = await vs.add_and_save_documents(file)
     if flat == 0:
         # 文件成功添加到向量数据库,将文件信息存储到数据库中
         # 1. 读取文件的全部内容
@@ -63,6 +64,7 @@ async def crud_get_all_files(db: AsyncSession):
 
 async def crud_delete_file(db: AsyncSession, file_id: int):
     """删除指定ID的文件"""
+    user_id = get_user_id()
     vs = VectorStoreService()
     collection = vs.vector_store._client.get_collection(chroma_config["collection_name"])
 
@@ -73,10 +75,15 @@ async def crud_delete_file(db: AsyncSession, file_id: int):
     name = file.original_name
     try:
         await db.delete(file)
-        # 删除向量数据库中与该文件相关的向量数据,这里需要根据实际情况实现,例如可以根据文件名或者文件ID来删除对应的向量数据
-        collection.delete(where={"source_filename": file.original_name})
+        #删除redis中与该文件相关的内容
+        flag = redis_delete_by_prefix(f"{user_id}:{file.hash_sha256}")
+        if flag > 0:
+            logger.info(f"Redis中与文件 {file.original_name} 相关的内容已成功删除，共删除 {flag} 个键")
+        else:
+            raise Exception(f"未能删除Redis中与文件 {file.original_name} 相关的内容，可能没有找到对应的键")
 
-        logger.info(f"文件 {file.original_name} 已成功删除")
+        # 删除向量数据库中与该文件相关的向量数据,这里需要根据实际情况实现,例如可以根据文件名或者文件ID来删除对应的向量数据
+        collection.delete(where={"source_filename_md5": file.hash_sha256})
         return name,True  # 删除成功
     except Exception as e:
         await db.rollback()  # 回滚数据库事务
