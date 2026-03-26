@@ -1,0 +1,117 @@
+2026-03-26 12:56:15,010 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 12:57:26,829 - INFO - vector_store.py:79 - [压缩处理] 第5个文档 (批次 1/2)
+2026-03-26 12:59:07,876 - INFO - vector_store.py:110 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 12:59:07,876 - INFO - vector_store.py:110 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 12:59:07,877 - INFO - vector_store.py:110 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 12:59:07,877 - INFO - vector_store.py:110 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 12:59:07,882 - INFO - vector_store.py:110 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 12:59:07,882 - INFO - vector_store.py:79 - [压缩处理] 第2个文档 (批次 2/2)
+2026-03-26 13:00:37,705 - INFO - vector_store.py:110 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 13:00:37,706 - INFO - vector_store.py:110 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 13:00:38,758 - INFO - vector_store.py:129 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 13:21:32,078 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 13:21:37,837 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 13:23:24,746 - INFO - vector_store.py:114 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 13:23:24,747 - INFO - vector_store.py:114 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 13:23:24,747 - INFO - vector_store.py:114 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 13:23:24,752 - INFO - vector_store.py:114 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 13:23:24,752 - INFO - vector_store.py:114 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 13:23:24,752 - INFO - vector_store.py:114 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 13:23:24,753 - INFO - vector_store.py:114 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 13:23:25,810 - INFO - vector_store.py:133 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 13:29:01,255 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 13:29:08,979 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 13:31:20,387 - INFO - vector_store.py:114 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 13:31:20,387 - INFO - vector_store.py:114 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 13:31:20,387 - INFO - vector_store.py:114 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 13:31:20,390 - INFO - vector_store.py:114 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 13:31:20,390 - INFO - vector_store.py:114 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 13:31:20,390 - INFO - vector_store.py:114 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 13:31:20,391 - INFO - vector_store.py:114 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 13:31:21,435 - INFO - vector_store.py:133 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 13:44:31,951 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 13:44:39,394 - INFO - vector_store.py:80 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 13:46:31,033 - INFO - vector_store.py:111 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 13:46:31,033 - INFO - vector_store.py:111 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 13:46:31,034 - INFO - vector_store.py:111 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 13:46:31,037 - INFO - vector_store.py:111 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 13:46:31,038 - INFO - vector_store.py:111 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 13:46:31,038 - INFO - vector_store.py:111 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 13:46:31,038 - INFO - vector_store.py:111 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 13:46:32,021 - INFO - vector_store.py:130 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 14:39:53,979 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 14:39:57,084 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 14:40:04,382 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 14:41:46,115 - INFO - vector_store.py:114 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 14:41:46,116 - INFO - vector_store.py:114 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 14:41:46,116 - INFO - vector_store.py:114 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 14:41:46,118 - INFO - vector_store.py:114 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 14:41:46,118 - INFO - vector_store.py:114 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 14:41:46,118 - INFO - vector_store.py:114 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 14:41:46,119 - INFO - vector_store.py:114 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 14:41:47,253 - INFO - vector_store.py:133 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 14:44:30,265 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 14:44:36,418 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 14:46:53,224 - INFO - vector_store.py:114 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 14:46:53,224 - INFO - vector_store.py:114 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 14:46:53,225 - INFO - vector_store.py:114 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 14:46:53,227 - INFO - vector_store.py:114 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 14:46:53,227 - INFO - vector_store.py:114 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 14:46:53,227 - INFO - vector_store.py:114 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 14:46:53,227 - INFO - vector_store.py:114 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 14:46:54,262 - INFO - vector_store.py:133 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 14:47:20,119 - INFO - vector_store.py:83 - [压缩处理] 第4个文档 (批次 1/1)
+2026-03-26 14:49:36,868 - INFO - vector_store.py:114 - 文档fa5e3778fd12d0783f391ac5d8a61ebb已压缩完成
+2026-03-26 14:49:36,868 - INFO - vector_store.py:114 - 文档078a09a520fae71114cf81f4c76423a1已压缩完成
+2026-03-26 14:49:36,872 - INFO - vector_store.py:114 - 文档d10b8a47afff87081deeac4ed62a9d5f已压缩完成
+2026-03-26 14:49:36,872 - INFO - vector_store.py:114 - 文档bf6eff2532e7193907c2dc70561f88f4已压缩完成
+2026-03-26 14:49:37,900 - INFO - vector_store.py:133 - [加载知识库] 批量添加4个压缩后的文档到向量数据库
+2026-03-26 14:57:32,183 - ERROR - vector_store.py:200 - 文档缺少MD5元数据，无法从Redis获取内容
+2026-03-26 14:57:32,183 - ERROR - vector_store.py:200 - 文档缺少MD5元数据，无法从Redis获取内容
+2026-03-26 14:57:32,183 - ERROR - vector_store.py:200 - 文档缺少MD5元数据，无法从Redis获取内容
+2026-03-26 15:00:04,184 - ERROR - vector_store.py:205 - 未能从Redis中找到MD5为b2fc5da66cbc1edc4bce6026016d979a的文档内容
+2026-03-26 15:00:04,185 - ERROR - vector_store.py:205 - 未能从Redis中找到MD5为ab43451993793389ecaf591a18c4b174的文档内容
+2026-03-26 15:00:04,185 - ERROR - vector_store.py:205 - 未能从Redis中找到MD5为c738cc8ee4dbe4a5e494d83a7506aec0的文档内容
+2026-03-26 15:05:58,127 - ERROR - vector_store.py:157 - 未能从Redis中找到MD5为c738cc8ee4dbe4a5e494d83a7506aec0的文档内容
+2026-03-26 15:05:58,128 - ERROR - vector_store.py:157 - 未能从Redis中找到MD5为ab43451993793389ecaf591a18c4b174的文档内容
+2026-03-26 15:05:58,128 - ERROR - vector_store.py:157 - 未能从Redis中找到MD5为b2fc5da66cbc1edc4bce6026016d979a的文档内容
+2026-03-26 15:10:47,094 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 15:10:51,660 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 15:12:48,111 - INFO - vector_store.py:114 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 15:12:48,112 - INFO - vector_store.py:114 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 15:12:48,112 - INFO - vector_store.py:114 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 15:12:48,114 - INFO - vector_store.py:114 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 15:12:48,114 - INFO - vector_store.py:114 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 15:12:48,114 - INFO - vector_store.py:114 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 15:12:48,114 - INFO - vector_store.py:114 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 15:12:49,108 - INFO - vector_store.py:123 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 15:28:26,563 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-26 15:28:34,289 - WARNING - vector_store_service.py:84 - Redis中未找到与文件 中二知识笔记.pdf 相关的内容，或删除失败
+2026-03-26 15:33:19,313 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 15:35:07,971 - INFO - vector_store.py:113 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 15:35:07,972 - INFO - vector_store.py:113 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 15:35:07,972 - INFO - vector_store.py:113 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 15:35:07,973 - INFO - vector_store.py:113 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 15:35:07,973 - INFO - vector_store.py:113 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 15:35:07,973 - INFO - vector_store.py:113 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 15:35:07,973 - INFO - vector_store.py:113 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 15:35:09,050 - INFO - vector_store.py:122 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
+2026-03-26 15:36:20,439 - ERROR - vector_store_service.py:89 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 15:38:04,712 - ERROR - vector_store_service.py:89 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 15:42:26,106 - ERROR - vector_store_service.py:90 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 15:43:27,482 - ERROR - vector_store_service.py:90 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 15:52:52,876 - ERROR - vector_store_service.py:90 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 15:55:12,996 - ERROR - vector_store_service.py:90 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 15:56:58,902 - ERROR - vector_store_service.py:90 - 删除文件失败: 未能删除Redis中与文件 中二知识笔记.pdf 相关的内容，可能没有找到对应的键
+2026-03-26 16:00:56,713 - INFO - vector_store_service.py:81 - Redis中与文件 中二知识笔记.pdf 相关的内容已成功删除，共删除 7 个键
+2026-03-26 16:31:28,828 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 16:31:30,300 - ERROR - vector_store.py:129 - [加载知识库] 文件中二知识笔记.pdf处理失败,Connection error.
+2026-03-26 16:33:22,869 - INFO - vector_store.py:83 - [压缩处理] 第7个文档 (批次 1/1)
+2026-03-26 16:35:43,024 - INFO - vector_store.py:113 - 文档380794effeb484df998b9ea390f79a46已压缩完成
+2026-03-26 16:35:43,025 - INFO - vector_store.py:113 - 文档d4d5772ad5b8ede1121910458af55cf4已压缩完成
+2026-03-26 16:35:43,025 - INFO - vector_store.py:113 - 文档79511e14ae8cd2cfb8f95b2198159c7c已压缩完成
+2026-03-26 16:35:43,025 - INFO - vector_store.py:113 - 文档3a8a9a45339ec05d02b2caa5532be030已压缩完成
+2026-03-26 16:35:43,025 - INFO - vector_store.py:113 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已压缩完成
+2026-03-26 16:35:43,025 - INFO - vector_store.py:113 - 文档ab43451993793389ecaf591a18c4b174已压缩完成
+2026-03-26 16:35:43,025 - INFO - vector_store.py:113 - 文档b2fc5da66cbc1edc4bce6026016d979a已压缩完成
+2026-03-26 16:35:58,007 - INFO - vector_store.py:122 - [加载知识库] 批量添加7个压缩后的文档到向量数据库
