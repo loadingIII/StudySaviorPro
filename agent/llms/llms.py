@@ -5,7 +5,7 @@ import tiktoken
 chat_llm_name = qwen_model_name
 think_llm_name = qwen_model_name
 question_llm_name = qwen_model_name
-
+query_llm_name = qwen_model_name
 
 chat_llm = ChatOpenAI(
     api_key=qwen_api_key,
@@ -23,6 +23,14 @@ think_llm = ChatOpenAI(
 
 
 question_llm = ChatOpenAI(
+    api_key=qwen_api_key,
+    base_url=qwen_url,
+    model=think_llm_name,
+    temperature=0.5,
+)
+
+
+query_llm = ChatOpenAI(
     api_key=qwen_api_key,
     base_url=qwen_url,
     model=think_llm_name,

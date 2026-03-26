@@ -22,10 +22,12 @@ tf_prompt = get_prompt("agent/prompts/smart_question/tf_question.txt")
 cr_question_prompt = get_prompt("agent/prompts/smart_question/cr_question.txt")
 
 #上下文压缩提示词
-zip_prompt = get_prompt("agent/prompts/zip_prompt.txt")
+chat_zip_prompt = get_prompt("agent/prompts/chat_zip_prompt.txt")
 
+#doc压缩提示词
+docs_zip_prompt = get_prompt("agent/prompts/docs_zip_prompt.txt")
 
 
 
 if __name__ == '__main__':
-    print(tf_prompt)
+    print(docs_zip_prompt)
