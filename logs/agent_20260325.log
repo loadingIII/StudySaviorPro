@@ -1,0 +1,37 @@
+2026-03-25 09:31:29,782 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 09:31:44,371 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 09:33:12,675 - INFO - vector_store.py:85 - 文档fa5e3778fd12d0783f391ac5d8a61ebb已添加到向量数据库
+2026-03-25 09:34:04,379 - INFO - vector_store.py:85 - 文档078a09a520fae71114cf81f4c76423a1已添加到向量数据库
+2026-03-25 09:34:59,939 - INFO - vector_store.py:85 - 文档d10b8a47afff87081deeac4ed62a9d5f已添加到向量数据库
+2026-03-25 09:35:58,693 - INFO - vector_store.py:85 - 文档bf6eff2532e7193907c2dc70561f88f4已添加到向量数据库
+2026-03-25 09:51:30,308 - INFO - vector_store_service.py:79 - 文件 洗涤养护.txt 已成功删除
+2026-03-25 10:13:40,445 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 10:26:15,351 - INFO - vector_store.py:85 - 文档fa5e3778fd12d0783f391ac5d8a61ebb已添加到向量数据库
+2026-03-25 10:27:42,912 - INFO - vector_store.py:85 - 文档078a09a520fae71114cf81f4c76423a1已添加到向量数据库
+2026-03-25 10:29:32,717 - INFO - vector_store.py:85 - 文档d10b8a47afff87081deeac4ed62a9d5f已添加到向量数据库
+2026-03-25 10:30:52,608 - INFO - vector_store.py:85 - 文档bf6eff2532e7193907c2dc70561f88f4已添加到向量数据库
+2026-03-25 10:38:14,310 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 10:44:46,818 - ERROR - file_handler.py:83 - [pdf_loader] 加载文件中二知识笔记.pdf失败，File path <tempfile.SpooledTemporaryFile object at 0x0000021088044160> is not a valid file or url
+2026-03-25 10:44:46,818 - WARNING - vector_store.py:64 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-25 10:45:09,511 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 11:08:29,556 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 11:08:39,020 - ERROR - file_handler.py:92 - [pdf_loader] 加载文件 中二知识笔记.pdf 失败：File path <_io.BytesIO object at 0x000001ECD65DC310> is not a valid file or url
+2026-03-25 11:08:39,021 - WARNING - vector_store.py:64 - [加载知识库]文件中二知识笔记.pdf内无有效文本内容,跳过
+2026-03-25 11:16:23,153 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 12:43:56,995 - INFO - ai_response_service.py:136 - 获取用户会话成功!
+2026-03-25 12:44:07,124 - ERROR - vector_store.py:92 - [加载知识库]文件中二知识笔记.pdf处理失败,1 validation error for Document
+page_content
+  Input should be a valid string [type=string_type, input_value=<coroutine object zip_text at 0x000001D0E7B5C9E0>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-03-25 12:48:26,929 - ERROR - vector_store.py:92 - [加载知识库]文件中二知识笔记.pdf处理失败,object PromptTemplate can't be used in 'await' expression
+2026-03-25 12:51:42,719 - ERROR - vector_store.py:92 - [加载知识库]文件中二知识笔记.pdf处理失败,1 validation error for Document
+page_content
+  Input should be a valid string [type=string_type, input_value=<coroutine object Runnabl...e at 0x00000219ADF88040>, input_type=coroutine]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+2026-03-25 12:53:57,749 - INFO - vector_store.py:86 - 文档380794effeb484df998b9ea390f79a46已添加到向量数据库
+2026-03-25 12:56:27,873 - INFO - vector_store.py:86 - 文档d4d5772ad5b8ede1121910458af55cf4已添加到向量数据库
+2026-03-25 12:57:37,662 - INFO - vector_store.py:86 - 文档79511e14ae8cd2cfb8f95b2198159c7c已添加到向量数据库
+2026-03-25 12:59:14,450 - INFO - vector_store.py:86 - 文档3a8a9a45339ec05d02b2caa5532be030已添加到向量数据库
+2026-03-25 13:00:24,577 - INFO - vector_store.py:86 - 文档c738cc8ee4dbe4a5e494d83a7506aec0已添加到向量数据库
+2026-03-25 13:01:29,602 - INFO - vector_store.py:86 - 文档ab43451993793389ecaf591a18c4b174已添加到向量数据库
+2026-03-25 13:02:37,551 - INFO - vector_store.py:86 - 文档b2fc5da66cbc1edc4bce6026016d979a已添加到向量数据库
