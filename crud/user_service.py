@@ -17,7 +17,7 @@ async def login_by_pd(db: AsyncSession, user_login: UserLogin):
     if user and user.password_hash == password:
         data = {"user_id": user.id, "username": user.username}
         jwt = encode_jwt(data)
-        return UserResponse(id=user.id, Authorization="Bearer "+jwt)
+        return UserResponse(id=user.id,username=user.username,Authorization="Bearer "+jwt)
     else:
         return None
 

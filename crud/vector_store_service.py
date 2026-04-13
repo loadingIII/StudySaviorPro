@@ -48,7 +48,9 @@ async def crud_add_documents(db: AsyncSession,file: UploadFile = File(...)):
 
 async def crud_get_all_files(db: AsyncSession):
     """获取当前用户上传的所有文件的信息"""
-    res = await db.execute(select(FileInfo))
+    user_id = get_user_id()
+    print(f"当前用户ID: {user_id}")  # 添加打印语句以检查用户ID
+    res = await db.execute(select(FileInfo).where(FileInfo.uploaded_by_user_id == user_id))
     files = res.scalars().all()
     file_vos = [
         FileVO(

@@ -11,4 +11,5 @@ class UserLogin(BaseModel):
 class UserResponse(BaseModel):
     """用户响应模型"""
     id: int
+    username: Optional[str] = None
     Authorization: str

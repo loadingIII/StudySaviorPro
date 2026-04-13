@@ -4,7 +4,6 @@ from typing import Optional
 from jose import jwt
 
 from utils.envUtils import jwt_algorithm, jwt_secret_key
-from utils.threadUtils import set_user_id
 
 # --- 配置 ---
 SECRET_KEY = jwt_secret_key
@@ -46,7 +45,6 @@ def decode_jwt(token: str):
               如果解析失败，会抛出异常。
     """
     res = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    set_user_id(res.get("user_id"))
     return res
 
 

@@ -56,8 +56,8 @@ def pdf_loader(file: UploadFile, password: Optional[str] = None) -> List[Documen
             shutil.copyfileobj(file.file, temp_file)  # 流式复制，高效安全
 
         # 4. 用临时文件路径加载（PyPDFLoader 仅接受路径字符串）
-        # loader = UnstructuredPDFLoader(temp_file_path, password=password)
-        loader = PyPDFLoader(temp_file_path, password=password)
+        loader = UnstructuredPDFLoader(temp_file_path, password=password)
+        # loader = PyPDFLoader(temp_file_path, password=password)
         return loader.load()
 
     except Exception as e:
