@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240">
+  <!-- 书本 -->
+  <path d="M40 60 L100 40 L160 60 L160 160 L100 140 L40 160 Z" fill="none" stroke="black" stroke-width="8" stroke-linejoin="round"/>
+  <path d="M100 40 L100 140" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M40 60 L40 160" fill="none" stroke="black" stroke-width="8"/>
+  <path d="M160 60 L160 160" fill="none" stroke="black" stroke-width="8"/>
+  
+  <!-- 铅笔 -->
+  <path d="M100 20 L100 100" fill="none" stroke="black" stroke-width="8" stroke-linecap="round"/>
+  <path d="M100 100 L85 130 L100 125 L115 130 Z" fill="black"/>
+  <circle cx="100" cy="20" r="8" fill="black"/>
+</svg>
