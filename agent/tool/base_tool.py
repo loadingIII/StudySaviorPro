@@ -1,6 +1,6 @@
 from langchain_core.tools import tool
 from agent.rag.rag_service import RagSummarizeService
-from zai import ZhipuAiClient
+from zhipuai import ZhipuAI
 
 from utils.envUtils import zhi_pu_api_key
 
@@ -30,7 +30,7 @@ def web_search(query: str) -> str:
     Return:
         从网络上搜索相关信息生成的总结
     """
-    client = ZhipuAiClient(api_key=zhi_pu_api_key)
+    client = ZhipuAI(api_key=zhi_pu_api_key)
     response = client.web_search.web_search(
         search_engine="search_std",
         search_query=query,

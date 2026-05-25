@@ -5,17 +5,17 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 
 from schemas.agent_schemas import ChatHistoryVO
-from utils.envUtils import qwen_api_key, qwen_url, qwen_model_name
+from utils.envUtils import MODEL_API, MODEL_URL, model_name
 from utils.prompt_loader import chat_zip_prompt, docs_zip_prompt
 
-zip_llm_name = qwen_model_name
+zip_llm_name = model_name
 
 # 用于计算token
 enc = tiktoken.get_encoding("cl100k_base")
 
 zip_llm = ChatOpenAI(
-    api_key=qwen_api_key,
-    base_url=qwen_url,
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
     model=zip_llm_name,
     temperature=0.3,
 )

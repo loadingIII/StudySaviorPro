@@ -6,9 +6,9 @@ from utils.path_tool import get_abs_path
 
 load_dotenv(get_abs_path(".env"))
 
-qwen_api_key = os.getenv("QWEN_API_KEY")
-qwen_url = os.getenv("QWEN_URL")
-qwen_model_name = os.getenv("QWEN_MODEL_NAME")
+MODEL_API = os.getenv("MODEL_API")
+MODEL_URL = os.getenv("MODEL_URL")
+model_name = os.getenv("MODEL_NAME")
 zhi_pu_api_key = os.getenv("ZHI_PU_API_KEY")
 
 tongyi_xiaomi_url = os.getenv("TONGYI_XIAOMI_URL")
@@ -20,4 +20,4 @@ jwt_algorithm = os.getenv("ALGORITHM")
 
 
 if __name__ == "__main__":
-    print("QWEN_API_KEY:", zhi_pu_api_key)
+    print("zhi_pu_api_key:", zhi_pu_api_key)

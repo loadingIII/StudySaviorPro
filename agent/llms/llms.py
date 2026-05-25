@@ -1,38 +1,38 @@
 from langchain_openai import ChatOpenAI
-from utils.envUtils import qwen_api_key, qwen_url, qwen_model_name
+from utils.envUtils import MODEL_API, MODEL_URL, model_name
 import tiktoken
 
-chat_llm_name = qwen_model_name
-think_llm_name = qwen_model_name
-question_llm_name = qwen_model_name
-query_llm_name = qwen_model_name
+chat_llm_name = model_name
+think_llm_name = model_name
+question_llm_name = model_name
+query_llm_name = model_name
 
 chat_llm = ChatOpenAI(
-    api_key=qwen_api_key,
-    base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
-    model=chat_llm_name,  # 此处以qwen-plus为例，您可按需更换模型名称。模型列表：https://help.aliyun.com/zh/model-studio/getting-started/models
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
+    model=chat_llm_name,
     temperature=0.7,
 )
 
 think_llm = ChatOpenAI(
-    api_key=qwen_api_key,
-    base_url=qwen_url,
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
     model=think_llm_name,
     temperature=0.5,
 )
 
 
 question_llm = ChatOpenAI(
-    api_key=qwen_api_key,
-    base_url=qwen_url,
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
     model=think_llm_name,
     temperature=0.5,
 )
 
 
 query_llm = ChatOpenAI(
-    api_key=qwen_api_key,
-    base_url=qwen_url,
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
     model=think_llm_name,
     temperature=0.5,
 )
