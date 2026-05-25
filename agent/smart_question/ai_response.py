@@ -6,7 +6,7 @@ from langchain_core.prompts import PromptTemplate
 from agent.rag.rag_service import RagSummarizeService
 from schemas.quesion_schemas import QuestionDTO
 from utils.prompt_loader import choice_prompt, fill_blank_prompt, tf_prompt, cr_question_prompt
-from model.Question import MultipleChoiceQuestions, MultipleFillBlankQuestions, MultipleTFQuestions, MultipleCRQuestions
+from model.question_schemas import MultipleChoiceQuestions, MultipleFillBlankQuestions, MultipleTFQuestions, MultipleCRQuestions
 
 rag_service = RagSummarizeService()
 

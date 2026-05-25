@@ -112,9 +112,10 @@ async def crud_get_new_session_id(db: AsyncSession):
         # 如果session_id不存在，则创建一个
         if session:
             session_id = session.id + 1
+            logger.info(f"获取新session_id成功：{session.id}")
         else:
             session_id = 1
-        logger.info(f"获取新session_id成功：{session.id}")
+            logger.info("获取新session_id成功：用户无会话，使用默认id=1")
 
         return session_id
     except:
@@ -172,8 +173,11 @@ async def crud_delete_chat_history(db: AsyncSession, chat_history_ids):
 async def crud_delete_chat_session(db: AsyncSession, session_id):
     """删除当前用户的聊天会话"""
     try:
-        # 先将会话下的聊天记录标记为已删除
+        # 先删除会话下的聊天记录
         await db.execute(delete(ChatHistory).where(ChatHistory.session_id == session_id))
+        # 再删除会话本身
+        await db.execute(delete(ChatSession).where(ChatSession.id == session_id))
+        await db.commit()
         logger.info(f"删除用户聊天会话成功!")
         return True
     except:

@@ -1,61 +1,9 @@
 from datetime import datetime
-from typing import Dict, List, Optional
-
-from pydantic import BaseModel, Field
-
-from model.base import Base
-
-
-class ChoiceQuestion(BaseModel):
-    """
-    表示由AI生成的选择题的Pydantic模型。
-    """
-    # 题干
-    question: str
-    # 选项，使用字典形式，键为选项字母，值为选项内容
-    options: Dict[str, str]
-    # 正确答案，例如 'A', 'B', 'C', 'D'
-    answer: str
-    # 对答案的解释
-    explanation: str
-
-class MultipleChoiceQuestions(BaseModel):
-    questions: List[ChoiceQuestion] = Field(description="A list of multiple choice questions")
-
-
-class FillBlankQuestion(BaseModel):
-    """表示由AI生成的填空题的Pydantic模型。"""
-    question: str
-    answer: str
-    explanation: str
-
-class MultipleFillBlankQuestions(BaseModel):
-    questions: List[FillBlankQuestion]
-
-class TFQuestion(BaseModel):
-    """表示由AI生成的判断题的Pydantic模型。"""
-    question: str
-    answer: int  # 0表示False, 1表示True
-    explanation: str
-
-class MultipleTFQuestions(BaseModel):
-    questions: List[TFQuestion]
-
-class CRQuestion(BaseModel):
-    """表示由AI生成的主观题的Pydantic模型。"""
-    question: str
-    answer: str
-    explanation: str
-
-class MultipleCRQuestions(BaseModel):
-    questions: List[CRQuestion]
-
-
-
-from sqlalchemy import Integer, String, Text, DateTime, func, ForeignKey, JSON
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
-from datetime import datetime
 from typing import Optional
+
+from sqlalchemy import Integer, Text, DateTime
+from sqlalchemy.orm import Mapped, mapped_column
+
 from model.base import Base
 
 
@@ -75,4 +23,3 @@ class UserGeneratedQuestion(Base):
 
     def __repr__(self):
         return f"<UserGeneratedQuestion(id={self.id}, user_id={self.user_id}, question='{self.original_question[:20]}...')>"
-

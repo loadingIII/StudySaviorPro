@@ -30,6 +30,9 @@ class VectorStoreService:
             persist_directory=persist_directory,
             embedding_function=embd_model
         )
+
+
+
         # 初始化文本分片器
         self.spliter = RecursiveCharacterTextSplitter(
             chunk_size=chroma_config["chunk_size"],

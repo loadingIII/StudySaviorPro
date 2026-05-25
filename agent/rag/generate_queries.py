@@ -20,7 +20,6 @@ def generate_queries(original_query, num_queries=3):
 
 # Output Format (Example)
     ####(在下一个"####"之前的内容为样例输出)
-    
     "代码性能优化技巧"\n
     "提升程序运行速度的方法"\n
     "如何让代码跑得更快"\n
