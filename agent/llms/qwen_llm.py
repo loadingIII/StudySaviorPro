@@ -1,23 +1,29 @@
-from langchain_community.chat_models import ChatTongyi
 from langchain_community.embeddings import DashScopeEmbeddings
+from langchain_openai import ChatOpenAI
 
 from utils.configUtils import chroma_config
-from utils.envUtils import MODEL_API, MODEL_URL, model_name
+from utils.envUtils import MODEL_API, MODEL_URL, model_name, qwen_api_key
 
-chat_llm = ChatTongyi(
+thinking_disabled = {"thinking": {"type": "disabled"}}
+
+chat_llm = ChatOpenAI(
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
     model=model_name,
     temperature=0.7,
-    api_key=MODEL_API,
-    base_url=MODEL_URL)
+    extra_body=thinking_disabled,
+)
 
-think_llm = ChatTongyi(
+think_llm = ChatOpenAI(
+    api_key=MODEL_API,
+    base_url=MODEL_URL,
     model=model_name,
     temperature=0.5,
-    api_key=MODEL_API,
-    base_url=MODEL_URL)
+    extra_body=thinking_disabled,
+)
 
 
-embd_model = DashScopeEmbeddings(model=chroma_config["embedding_model"])
+embd_model = DashScopeEmbeddings(model=chroma_config["embedding_model"], dashscope_api_key=qwen_api_key)
 
 
 if __name__ == "__main__":

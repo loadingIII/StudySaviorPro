@@ -1,47 +1,46 @@
-from langchain.agents import create_agent
+# Agent 入口模块
+# 对外暴露 agent_invoke（同步调用）和 agent_stream（流式调用）两个接口
+# 内部使用 Supervisor Agent 进行任务路由，替代了旧版单一的 create_agent
+from langchain_core.messages import AIMessage
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from agent.llms.llms import chat_llm
+from agent.sub_agents.supervisor import create_supervisor
 from agent.llms.zip_llms import zip_chat_history
 from crud.ai_response_service import crud_get_chat_history
 from schemas.agent_schemas import AgentQuestion
-from agent.memory.pg_memory import get_checkpointer, get_store
-from agent.tool.base_tool import rag_tool,web_search
 from utils.logger_handler import logger
-from utils.prompt_loader import system_prompt
-from langchain_core.messages import AIMessage
-
 from utils.threadUtils import get_user_id
 
-# 配置缓存
-checkpointer = get_checkpointer()
-store = get_store()
+# 延迟初始化的 Supervisor 单例
+_supervisor = None
 
-async def create_my_agent():
 
-    # 创建agent
-    return create_agent(
-        chat_llm,
-        tools=[web_search,rag_tool],
-        system_prompt=system_prompt,
-    )
-
+async def _get_supervisor():
+    global _supervisor
+    if _supervisor is None:
+        _supervisor = await create_supervisor()
+    return _supervisor
 
 
 async def agent_invoke(data: AgentQuestion):
+    """非流式 Agent 调用，返回完整回复"""
     question = data.question
     user_id = get_user_id()
-    """用于调用agent,并进行回答"""
     config = {"configurable": {"thread_id": user_id}}
 
-    agent = await create_my_agent()
-    res =await agent.ainvoke({"messages": [{"role": "user", "content": question}]}, config=config)
-    # print(res)
+    supervisor = await _get_supervisor()
+    res = await supervisor.ainvoke(
+        {"messages": [{"role": "user", "content": question}]},
+        config=config,
+    )
     content = res["messages"][-1].content
     return content
 
 
-async def agent_stream(db: AsyncSession,data: AgentQuestion):
+async def agent_stream(db: AsyncSession, data: AgentQuestion):
+    """流式 Agent 调用，逐块 yield 回复内容
+    从 DB 获取历史对话 → 压缩 → 拼接当前问题 → Supervisor 流式执行 → yield 每个 token
+    """
     temp_history = await crud_get_chat_history(db, data.session_id)
     zip_history = await zip_chat_history(temp_history)
     query = f"""
@@ -50,16 +49,18 @@ async def agent_stream(db: AsyncSession,data: AgentQuestion):
     {zip_history}
     ######
     【用户现在提问】：
-    {data.question}            
+    {data.question}
     """
 
-    agent = await create_my_agent()
+    user_id = get_user_id()
+    config = {"configurable": {"thread_id": user_id}}
     input_dict = {
         "messages": [
             {"role": "user", "content": query},
         ]
     }
-    response = agent.astream(input_dict, stream_mode="values", context={"report": False})
+    supervisor = await _get_supervisor()
+    response = supervisor.astream(input_dict, stream_mode="values", config=config)
     async for line in response:
         if line:
             latest_message = line["messages"][-1]
@@ -72,4 +73,4 @@ async def agent_stream(db: AsyncSession,data: AgentQuestion):
                 if latest_message.tool_calls:
                     logger.info(f"工具调用结果：{[tc['name'] for tc in latest_message.tool_calls]}")
             except AttributeError:
-                pass    # 不是所有消息都有 tool_calls 属性，避免因缺失该属性而导致的错误
+                pass

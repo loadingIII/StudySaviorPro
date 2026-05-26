@@ -6,7 +6,7 @@ from langchain_core.prompts import PromptTemplate
 
 from schemas.agent_schemas import ChatHistoryVO
 from utils.envUtils import MODEL_API, MODEL_URL, model_name
-from utils.prompt_loader import chat_zip_prompt, docs_zip_prompt
+from utils.prompt_loader import chat_zip_prompt, docs_zip_prompt, rag_context_zip_prompt
 
 zip_llm_name = model_name
 
@@ -18,6 +18,7 @@ zip_llm = ChatOpenAI(
     base_url=MODEL_URL,
     model=zip_llm_name,
     temperature=0.3,
+    extra_body={"thinking": {"type": "disabled"}},
 )
 
 
@@ -40,6 +41,14 @@ async def zip_content(chat_history: str):
     chain = prompt | zip_llm | StrOutputParser()
 
     res = await chain.ainvoke({"chat_history": chat_history})
+    return res
+
+
+async def zip_rag_context(context: str) -> str:
+    """压缩组装好的 RAG 上下文字符串，输出纯文本段落"""
+    prompt = PromptTemplate.from_template(rag_context_zip_prompt)
+    chain = prompt | zip_llm | StrOutputParser()
+    res = await chain.ainvoke({"context": context})
     return res
 
 async def zip_chat_history(list_chat: list[ChatHistoryVO])-> str:

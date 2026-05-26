@@ -27,6 +27,12 @@ chat_zip_prompt = get_prompt("agent/prompts/chat_zip_prompt.txt")
 #doc压缩提示词
 docs_zip_prompt = get_prompt("agent/prompts/docs_zip_prompt.txt")
 
+#RAG上下文压缩提示词（查询时压缩）
+rag_context_zip_prompt = get_prompt("agent/prompts/rag_context_zip_prompt.txt")
+
+#RAG上下文融合提示词
+rag_context_fuse_prompt = get_prompt("agent/prompts/rag_context_fuse.txt")
+
 
 
 if __name__ == '__main__':

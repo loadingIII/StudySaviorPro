@@ -10,6 +10,7 @@ MODEL_API = os.getenv("MODEL_API")
 MODEL_URL = os.getenv("MODEL_URL")
 model_name = os.getenv("MODEL_NAME")
 zhi_pu_api_key = os.getenv("ZHI_PU_API_KEY")
+qwen_api_key = os.getenv("QWEN_API_KEY")
 
 tongyi_xiaomi_url = os.getenv("TONGYI_XIAOMI_URL")
 tongyi_xiaomi_model_name = os.getenv("TONGYI_XIAOMI_MODEL_NAME")

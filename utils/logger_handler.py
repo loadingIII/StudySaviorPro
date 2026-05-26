@@ -52,6 +52,9 @@ def get_logger(
 # 快捷获取日志器
 logger = get_logger()
 
+# 抑制 SQLAlchemy 的 SQL 日志输出
+logging.getLogger("sqlalchemy.engine").setLevel(logging.WARNING)
+
 
 if __name__ == '__main__':
     logger.info("信息日志")

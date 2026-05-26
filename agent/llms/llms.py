@@ -7,11 +7,14 @@ think_llm_name = model_name
 question_llm_name = model_name
 query_llm_name = model_name
 
+thinking_disabled = {"thinking": {"type": "disabled"}}
+
 chat_llm = ChatOpenAI(
     api_key=MODEL_API,
     base_url=MODEL_URL,
     model=chat_llm_name,
     temperature=0.7,
+    extra_body=thinking_disabled,
 )
 
 think_llm = ChatOpenAI(
@@ -19,6 +22,7 @@ think_llm = ChatOpenAI(
     base_url=MODEL_URL,
     model=think_llm_name,
     temperature=0.5,
+    extra_body=thinking_disabled,
 )
 
 
@@ -27,6 +31,7 @@ question_llm = ChatOpenAI(
     base_url=MODEL_URL,
     model=think_llm_name,
     temperature=0.5,
+    extra_body=thinking_disabled,
 )
 
 
@@ -35,6 +40,7 @@ query_llm = ChatOpenAI(
     base_url=MODEL_URL,
     model=think_llm_name,
     temperature=0.5,
+    extra_body=thinking_disabled,
 )
 
 

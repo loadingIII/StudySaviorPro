@@ -8,11 +8,11 @@
       <jdbc-url>jdbc:postgresql://localhost:5432/postgres</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="chroma " uuid="7d5050c1-ad96-4982-90ee-f5e143a23154">
+    <data-source source="LOCAL" name="chroma" uuid="7c3c286b-7e54-46c0-82af-428ab6ea8019">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\Liuji\PycharmProjects\agent_fastapi_demo\StudySaviorPro\chroma_db\chroma.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:E:\PythonFile\PycharmProjects\agent_fastapi_demo\StudySaviorPro\chroma_db\chroma.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
