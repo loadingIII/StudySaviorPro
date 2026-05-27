@@ -1,5 +1,8 @@
+from langchain_community.embeddings import DashScopeEmbeddings
 from langchain_openai import ChatOpenAI
-from utils.envUtils import MODEL_API, MODEL_URL, model_name
+
+from utils.configUtils import chroma_config
+from utils.envUtils import MODEL_API, MODEL_URL, model_name, qwen_api_key
 import tiktoken
 
 chat_llm_name = model_name
@@ -42,6 +45,9 @@ query_llm = ChatOpenAI(
     temperature=0.5,
     extra_body=thinking_disabled,
 )
+
+
+embd_model = DashScopeEmbeddings(model=chroma_config["embedding_model"], dashscope_api_key=qwen_api_key)
 
 
 

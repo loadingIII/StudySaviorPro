@@ -46,7 +46,14 @@ def get_sorted_docs(query: str) -> list:
         all_results.extend(res)
     # 去重排序
     final_res = deduplicate_and_rank(all_results)
+    # 从Redis获取原始文本，替换压缩后的chunk内容
+    docs = [doc for doc, _ in final_res]
+    original_texts = vs.get_full_content_from_redis(docs)
+    for i, doc in enumerate(docs):
+        if i < len(original_texts) and original_texts[i]:
+            doc.page_content = original_texts[i]
     return final_res  # [(Document, score), ...]
+
 
 
 if __name__ == "__main__":

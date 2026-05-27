@@ -3,7 +3,7 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
-from agent.llms.qwen_llm import embd_model
+from agent.llms.llms import embd_model
 from agent.llms.zip_llms import zip_text
 from utils.configUtils import chroma_config
 from utils.file_handler import pdf_loader, txt_loader, doc_loader, get_file_md5_hex
@@ -108,7 +108,6 @@ class VectorStoreService:
                         zip_doc = Document(
                             page_content=zip_str,
                             metadata={
-                                "source": doc.metadata.get("source", ""),
                                 "md5": doc_md5,
                                 "source_filename_md5": file_md5_hex
                             })

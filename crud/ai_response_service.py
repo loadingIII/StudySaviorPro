@@ -6,7 +6,7 @@ from sqlalchemy import select, update, delete
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from agent.llms.llms import think_llm
-from agent.smart_question.ai_response import get_questions
+from agent.sub_agents.question_agent import api_question_agent
 from model.Question import UserGeneratedQuestion
 from schemas.agent_schemas import AgentQuestion, ChatHistoryVO, ChatSessionVO
 from schemas.quesion_schemas import UserGeneratedQuestionVO
@@ -16,21 +16,25 @@ from model.ChatHistory import ChatHistory, ChatSession
 
 
 async def crud_intelligent_question_generation(data, db):
-    """智能出题的CRUD函数，负责调用LLM生成题目，并将生成的题目存储到数据库中"""
-    # 调用llm生成题目
-    questions = get_questions(data)
+    """智能出题的CRUD函数，负责调用QuestionAgent生成题目，并将生成的题目存储到数据库中"""
+    # 调用 QuestionAgent 生成题目
+    questions_json = await api_question_agent(
+        query=data.question,
+        question_type=data.question_type,
+        question_count=data.question_count
+    )
 
-    # 讲题目数据存入数据库
+    # 将题目数据存入数据库
     ug_questions = UserGeneratedQuestion(
         question_type=data.question_type,
         user_id=get_user_id(),
         original_question=data.question,
-        generated_question_text=questions.json(),
+        generated_question_text=questions_json,
         created_at=datetime.now()
     )
     db.add(ug_questions)
 
-    return questions
+    return questions_json
 
 
 async def crud_get_user_generated_questions(db):

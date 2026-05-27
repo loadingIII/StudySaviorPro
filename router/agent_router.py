@@ -102,7 +102,6 @@ async def delete_chat_session(session_id: int = Path(...), db: AsyncSession = De
 async def intelligent_question_generation(data: QuestionDTO, db: AsyncSession = Depends(get_db)):
     logger.info(f"用户请求智能出题：题目类型:{data.question_type} 出题数量:{data.question_count} 知识点:{data.question}")
     res = await crud_intelligent_question_generation(data, db)
-
     return success_response(data=res, message="智能出题成功")
 
 
