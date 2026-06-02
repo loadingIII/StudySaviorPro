@@ -9,7 +9,9 @@
       "Bash(python -c \"from langgraph.prebuilt import create_react_agent; print\\('langgraph.create_react_agent OK'\\)\")",
       "Bash(python -c \"from dotenv import load_dotenv; from utils.path_tool import get_abs_path; load_dotenv\\(get_abs_path\\('.env'\\)\\); import os; print\\('MODEL_NAME:', os.getenv\\('MODEL_NAME'\\)\\)\")",
       "Bash(python *)",
-      "Bash(git *)"
+      "Bash(git *)",
+      "Bash(dir /s /b /ad)",
+      "Bash(findstr /v \"__pycache__\\\\|\\\\.git\\\\|node_modules\\\\|chroma_db\\\\|\\\\.idea\")"
     ]
   }
 }
