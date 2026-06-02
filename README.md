@@ -2,6 +2,10 @@
 
 > 一个基于 **FastAPI + Vue 3 + LangChain** 的 AI 学习助手，采用多智能体架构（Agent-as-Tool 模式），支持知识库检索（RAG）、联网搜索、智能出题和对话式答题。
 
+<img width="1799" height="1160" alt="屏幕截图 2026-03-21 144130" src="https://github.com/user-attachments/assets/f1b9afe3-2286-4e7a-8fba-18a3c9eb5232" />
+<img width="1808" height="1169" alt="2dade7b26b40786aae459483ab46ed99" src="https://github.com/user-attachments/assets/7ad80697-52af-4e92-a466-96b7db570f75" />
+<img width="1793" height="1165" alt="6e9e099ab6f17f54b1734104a69e1363" src="https://github.com/user-attachments/assets/57ad410c-2de6-4ca5-84b0-694e23b8eaaf" />
+
 ---
 
 ## 功能特性
